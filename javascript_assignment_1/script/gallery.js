@@ -19,8 +19,12 @@ class CustomImage {
 let getJSON = async function getJSONData(event){
     let customImages = await fetch(base_url)
                          .then( response => response.json())
-                         .catch( error => console.error(error));
+                         .catch( error => console.log(error));
     console.log(customImages);
+    if(!customImages){
+        alert("Fetch failed");
+        return;
+    }
     Object.values(customImages).forEach(element => {
     let currentImage = CustomImage.fromJSON(element);
         renderImage(currentImage);
