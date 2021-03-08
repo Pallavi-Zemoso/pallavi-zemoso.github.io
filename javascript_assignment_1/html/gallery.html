@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlooms</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript" src="../script/gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Indian Elite Handlooms</h1>
+    </header>
+    <nav role="navigation">
+        <ul class="nav-tabs">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="container">
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <div class="gallery-container cards" id="galleryDiv"></div>
+                <div class="modal-container">
+                    <div class="modal-window">
+                      <h2 class="modal-header"></h2>
+                      <form class="form image-form" id="image-form">
+                         <p>
+                           <label for="img_name">Name:</label>
+                           <input type="text" id="img_name" maxlength="75" minlength="5" required>
+                         </p>
+                         <p>
+                           <label for="img_url">Url:</label>
+                           <input type="url" id="img_url" maxlength="256" minlength="20" required>
+                         </p>
+                         <p>
+                            <label for="img_info">Information:</label>
+                            <textarea id="img_info" maxlength="150" minlength="10" required></textarea>
+                         </p>
+                         <p>
+                            <label for="img_date">Uploaded Date:</label>
+                            <input id="img_date" type="date" required>
+                         </p>
+                         <br/>
+                         <div class="button-div">
+                             <button class="modal-button ok-button">Save</button>
+                             <button class="modal-button cancel-button">Cancel</button>
+                         </div>
+                      </form>
+                    </div>
+                </div>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>
