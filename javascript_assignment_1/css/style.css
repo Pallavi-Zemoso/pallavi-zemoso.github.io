@@ -206,7 +206,6 @@ label, input {
     border-radius: 8px;
     min-height: 30px;
     min-width: 250px;
-    margin: auto;
 }
 
 textarea {

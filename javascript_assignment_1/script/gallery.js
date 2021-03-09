@@ -1,5 +1,5 @@
 const role = "admin";
-const base_url = "http://my-json-server.typicode.com/pallavi-zemoso/datafiles/customImages";
+const base_url = "http://localhost:3000/customImages";
 const galleryFrame = document.getElementById("galleryDiv");
 
 class CustomImage {
@@ -62,6 +62,7 @@ function renderImage(customImage){
          console.log("Image loaded");
      })
      .catch( error => console.log("Image fetching failed: " + customImage.src));
+
 }
 
 
